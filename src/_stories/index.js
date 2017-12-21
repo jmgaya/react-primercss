@@ -12,7 +12,7 @@ import { storiesOf } from "@storybook/react";
 const iconsList = Object.values(Icons);
 
 storiesOf("Icon", module)
-    .add("all", () => iconsList.map(I => <I height="32" />))
+    .add("all", () => iconsList.map((I, idx) => <I key={idx} height="32" />))
     .add("with color", () => (
         <Icons.IcnLogoGithub height="64" color="#28A745" />
     ))

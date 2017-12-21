@@ -7,5 +7,6 @@ var icons = require("../icon");
         result += "\n\n";
     }
 
+    // eslint-disable-next-line
     console.log(result);
 })();

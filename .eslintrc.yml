@@ -1,0 +1,18 @@
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+parserOptions:
+  ecmaVersion: 6
+  sourceType: module
+  jsx: true
+  ecmaFeatures:
+    experimentalObjectRestSpread: true
+plugins:
+  - react
+env:
+  node: true
+rules:
+  semi: [error, always]
+  indent: [error, 4, {SwitchCase: 1}]
+  react/display-name: off
+  react/prop-types: off

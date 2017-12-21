@@ -28,7 +28,6 @@ const ButtonLink = ({
 };
 
 export const DefaultButton = ({
-    type,
     text,
     disabled,
     count,
@@ -47,7 +46,6 @@ export const DefaultButton = ({
 );
 
 export const PrimaryButton = ({
-    type,
     text,
     disabled,
     count,
@@ -67,7 +65,6 @@ export const PrimaryButton = ({
 );
 
 export const SecondaryButton = ({
-    type,
     text,
     disabled,
     count,
@@ -87,7 +84,6 @@ export const SecondaryButton = ({
 );
 
 export const TertiaryButton = ({
-    type,
     text,
     disabled,
     count,
@@ -107,7 +103,6 @@ export const TertiaryButton = ({
 );
 
 export const DangerButton = ({
-    type,
     text,
     disabled,
     count,
@@ -127,7 +122,6 @@ export const DangerButton = ({
 );
 
 export const OutlineButton = ({
-    type,
     text,
     disabled,
     count,
