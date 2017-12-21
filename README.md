@@ -1,1 +1,1 @@
-React ❤️ [primercss.io](primercss)
+React ❤️  [primercss](http://primercss.io/)
