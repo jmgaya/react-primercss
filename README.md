@@ -1,1 +1,1 @@
-React ❤️ primercss.io
+React ❤️ [primercss.io](primercss)
