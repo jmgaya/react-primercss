@@ -1,7 +1,7 @@
 {
-    "name": "react-primer-components",
+    "name": "react-primercss",
     "version": "0.1.0",
-    "description": "primercss.io components for React",
+    "description": "http://primercss.io components for React",
     "author": "Julio Muñoz <jmgaya.dev@gmail.com>",
     "scripts": {
         "lint": "eslint ./src",
