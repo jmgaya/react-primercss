@@ -5,7 +5,7 @@ React components for primercss.io
 
 ## Live demo
 
-[Check this!](https://runkit.com/pladaria/react-mark-ii-demo)
+TODO
 
 ## Installment
 
