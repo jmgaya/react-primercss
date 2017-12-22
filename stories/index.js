@@ -1,11 +1,11 @@
 import React from "react";
 
-import Button from "../dist/button";
-import ButtonLink from "../dist/button-link";
-import Blankslate from "../dist/blankslate";
-import Alert from "../dist/alert";
-import Avatar from "../dist/avatar";
-import * as Icons from "../dist/icon";
+import Button from "../src/button";
+import ButtonLink from "../src/button-link";
+import Blankslate from "../src/blankslate";
+import Alert from "../src/alert";
+import Avatar from "../src/avatar";
+import * as Icons from "../src/icon";
 
 import { storiesOf } from "@storybook/react";
 

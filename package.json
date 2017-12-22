@@ -4,18 +4,21 @@
     "description": "primercss.io components for React",
     "author": "Julio Muñoz <jmgaya.dev@gmail.com>",
     "scripts": {
-        "build-css":
-            "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
         "lint": "eslint ./src",
         "test":
             "nyc --reporter=lcov --reporter=text ava --verbose test/test.js",
+        "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
         "report": "nyc report --reporter=html && opn coverage/index.html",
         "clean": "rimraf dist coverage .nyc_output",
+        "watch-css":
+            "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+        "watch-storybook": "start-storybook -p 9009 -s src",
+        "storybook": "npm-run-all --parallel watch-css watch-storybook",
+        "start": "npm run storybook",
+        "build-css":
+            "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
         "build": "babel src --out-dir dist --copy-files --ignore '**/*.scss'",
-        "prepublish": "npm run lint && npm run build-css && npm run build",
-        "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-        "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook"
+        "prepublish": "npm run lint && npm run build-css && npm run build"
     },
     "devDependencies": {
         "@storybook/addon-actions": "^3.2.18",
@@ -30,6 +33,7 @@
         "eslint": "^4.13.1",
         "eslint-plugin-react": "^7.5.1",
         "node-sass-chokidar": "^0.0.3",
+        "npm-run-all": "^4.1.2",
         "nyc": "^11.4.1",
         "octicons": "^7.0.1",
         "opn-cli": "^3.1.0",
