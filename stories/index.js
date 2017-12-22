@@ -63,11 +63,7 @@ storiesOf("Blankslate", module)
         <Blankslate title="title" description="description" />
     ))
     .add("simple", () => (
-        <Blankslate
-            title="Simple 👏"
-            description="blankslate 🕶"
-            simple={true}
-        />
+        <Blankslate title="Simple 👏" description="blankslate 🕶" simple />
     ));
 
 storiesOf("Alert", module)
