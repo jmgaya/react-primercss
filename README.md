@@ -10,11 +10,11 @@ React components for primercss.io
 ## Installment
 
 ```
-npm install react-primercss
+npm install react-primer
 ```
 
 ```
-yarn add react-primercss
+yarn add react-primer
 ```
 
 ## Components
