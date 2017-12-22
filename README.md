@@ -5,7 +5,7 @@ React components for primercss.io
 
 ## Live demo
 
-TODO
+[Storybook 🔎](https://jmgaya.github.io/react-primercss/?selectedKind=Icon&selectedStory=with%20color&full=0&down=1&left=1&panelRight=0&downPanel=storybook%2Factions%2Factions-panel)
 
 ## Installment
 

@@ -15,6 +15,7 @@
         "watch-storybook": "start-storybook -p 9009 -s src",
         "storybook": "npm-run-all --parallel watch-css watch-storybook",
         "start": "npm run storybook",
+        "deploy-storybook": "storybook-to-ghpages",
         "build-css":
             "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
         "build": "babel src --out-dir dist --copy-files --ignore '**/*.scss'",
@@ -60,5 +61,8 @@
     "bugs": {
         "url": "https://github.com/jmgaya/react-primercss/issues"
     },
-    "homepage": "https://github.com/jmgaya/react-primercss#readme"
+    "homepage": "https://github.com/jmgaya/react-primercss#readme",
+    "dependencies": {
+        "@storybook/storybook-deployer": "^2.2.0"
+    }
 }
