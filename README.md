@@ -178,55 +178,55 @@ _Simple_
 _Default_
 
 ```js
-<Button.Default text="Default" />;
+<Button.Default onClick={() => {}} text="Default" />;
 ```
 
 _Primary_
 
 ```js
-<Button.Primary text="Primary" />;
+<Button.Primary onClick={() => {}} text="Primary" />;
 ```
 
 _Secondary_
 
 ```js
-<Button.Secondary text="Secondary" />;
+<Button.Secondary onClick={() => {}} text="Secondary" />;
 ```
 
 _Tertiary_
 
 ```js
-<Button.Tertiary text="Tertiary" />;
+<Button.Tertiary onClick={() => {}} text="Tertiary" />;
 ```
 
 _Danger_
 
 ```js
-<Button.Danger text="Danger" />;
+<Button.Danger onClick={() => {}} text="Danger" />;
 ```
 
 _Outline_
 
 ```js
-<Button.Outline text="Outline" />;
+<Button.Outline onClick={() => {}} text="Outline" />;
 ```
 
 _Disabled_
 
 ```js
-<Button.Primary text="Disabled" disabled />;
+<Button.Primary onClick={() => {}} text="Disabled" disabled />;
 ```
 
 _With Counter_
 
 ```js
-<Button.Outline text="Counter" count={12} />;
+<Button.Outline onClick={() => {}} text="Counter" count={12} />;
 ```
 
 _Small_
 
 ```js
-<Button.Primary text="Small" small />;
+<Button.Primary onClick={() => {}} text="Small" small />;
 ```
 
 _Group_
