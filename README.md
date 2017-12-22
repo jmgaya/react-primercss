@@ -1,6 +1,6 @@
 <p align="center">
 <b>react-primercss</b><br/>
-React components for [primercss](http://primercss.io/)
+React components for primercss.io
 </p>
 
 ## Live demo
