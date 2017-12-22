@@ -1,5 +1,6 @@
 import React from "react";
 import "./button.css";
+import Counter from "../counter";
 
 const ButtonLink = ({
     type,
@@ -22,7 +23,7 @@ const ButtonLink = ({
             role="button"
         >
             {text}
-            {!!count && <span className="Counter">{count}</span>}
+            {!!count && <Counter count={count} />}
         </a>
     );
 };

@@ -1,10 +1,12 @@
 import React from "react";
 
+import Counter from "../src/counter";
 import Button from "../src/button";
 import ButtonLink from "../src/button-link";
 import Blankslate from "../src/blankslate";
 import Alert from "../src/alert";
 import Avatar from "../src/avatar";
+import Navigation from "../src/navigation";
 import * as Icons from "../src/icon";
 
 import { storiesOf } from "@storybook/react";
@@ -76,6 +78,63 @@ storiesOf("Alert", module)
         <Alert.Warning description="This is a warning alert!" />
     ))
     .add("error", () => <Alert.Error description="This is an error alert!" />);
+
+storiesOf("Navigation", module)
+    .add("menu", () => (
+        <Navigation.Menu>
+            <Navigation.MenuItem href="#">
+                <Icons.IcnCalendar />
+                {"This"}
+            </Navigation.MenuItem>
+            <Navigation.MenuItem href="#">{"is"}</Navigation.MenuItem>
+            <Navigation.MenuItem href="#">
+                <Icons.IcnCode />
+                {"a"}
+            </Navigation.MenuItem>
+            <Navigation.MenuItem href="#" current>
+                <Icons.IcnCloudDownload />
+                {"menu"}
+            </Navigation.MenuItem>
+        </Navigation.Menu>
+    ))
+    .add("underline", () => (
+        <Navigation.Underline>
+            <Navigation.UnderlineItem href="#">
+                {"This"}
+            </Navigation.UnderlineItem>
+            <Navigation.UnderlineItem href="#">{"is"}</Navigation.UnderlineItem>
+            <Navigation.UnderlineItem href="#">{"an"}</Navigation.UnderlineItem>
+            <Navigation.UnderlineItem href="#" current>
+                <Icons.IcnCode height="14" />
+                {"underline"}
+                <Counter count="13" />
+            </Navigation.UnderlineItem>
+            <Navigation.UnderlineActionGroup>
+                <ButtonLink.Default text="Action" />
+            </Navigation.UnderlineActionGroup>
+        </Navigation.Underline>
+    ))
+    .add("underline right", () => (
+        <Navigation.Underline alignRight>
+            <Navigation.UnderlineItem href="#">
+                {"This"}
+            </Navigation.UnderlineItem>
+            <Navigation.UnderlineItem href="#">{"is"}</Navigation.UnderlineItem>
+            <Navigation.UnderlineItem href="#">{"an"}</Navigation.UnderlineItem>
+            <Navigation.UnderlineItem href="#" current>
+                {"underline"}
+            </Navigation.UnderlineItem>
+        </Navigation.Underline>
+    ))
+    .add("tabs", () => (
+        <Navigation.Tabs>
+            <Navigation.TabItem href="#">{"Some"}</Navigation.TabItem>
+            <Navigation.TabItem href="#" current>
+                {"tabs"}
+                <Counter count="6" />
+            </Navigation.TabItem>
+        </Navigation.Tabs>
+    ));
 
 storiesOf("Avatars", module)
     .add("square", () => (

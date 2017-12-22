@@ -1,5 +1,6 @@
 import React from "react";
 import "./button.css";
+import Counter from "../counter";
 
 const Button = ({
     type,
@@ -21,7 +22,7 @@ const Button = ({
             onClick={onClick}
         >
             {text}
-            {!!count && <span className="Counter">{count}</span>}
+            {!!count && <Counter count={count} />}
         </button>
     );
 };

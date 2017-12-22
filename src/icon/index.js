@@ -1,7 +1,7 @@
 import React from "react";
 import octicons from "octicons";
 
-const Icon = ({ name, height, width, color = "#000000" }) => {
+const Icon = ({ name, height = "16", width = height, color = "#000000" }) => {
     if (name in octicons) {
         const svg = octicons[name].toSVG({ name, height, width, fill: color });
         return <span dangerouslySetInnerHTML={{ __html: svg }} />;
