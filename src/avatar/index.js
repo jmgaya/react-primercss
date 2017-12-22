@@ -1,7 +1,13 @@
 import React from "react";
 import "./avatar.css";
 
-const SquareAvatar = ({ src, height, width, child = null, alt = "Avatar" }) => {
+export const SquareAvatar = ({
+    src,
+    height,
+    width,
+    child = null,
+    alt = "Avatar"
+}) => {
     if (!child)
         return (
             <img
@@ -33,39 +39,28 @@ const SquareAvatar = ({ src, height, width, child = null, alt = "Avatar" }) => {
     );
 };
 
-// TODO
-export const AvatarGroup = () => (
+export const AvatarGroup = ({ children }) => (
     <div className="AvatarStack AvatarStack--three-plus">
         <div
             className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1"
             aria-label="octocat, octocat, and octocat"
         >
-            <img
-                className="avatar"
-                height="20"
-                alt="@octocat"
-                src="https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
-                width="20"
-            />
-            <img
-                className="avatar"
-                height="20"
-                alt="@octocat"
-                src="https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
-                width="20"
-            />
-            <img
-                className="avatar"
-                height="20"
-                alt="@octocat"
-                src="https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
-                width="20"
-            />
+            {children}
         </div>
     </div>
 );
 
+export const AvatarGroupItem = ({
+    src,
+    alt = "@avatarItem",
+    height = "20",
+    width = "20"
+}) => (
+    <img className="avatar" height={height} width={width} alt={alt} src={src} />
+);
+
 export default {
     Square: SquareAvatar,
-    Group: AvatarGroup
+    Group: AvatarGroup,
+    GroupItem: AvatarGroupItem
 };
