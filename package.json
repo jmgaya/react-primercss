@@ -25,6 +25,7 @@
         "@storybook/addon-actions": "^3.2.18",
         "@storybook/addon-links": "^3.2.18",
         "@storybook/react": "^3.2.18",
+        "@storybook/storybook-deployer": "^2.2.0",
         "ava": "^0.24.0",
         "babel-cli": "^6.26.0",
         "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -61,8 +62,5 @@
     "bugs": {
         "url": "https://github.com/jmgaya/react-primercss/issues"
     },
-    "homepage": "https://github.com/jmgaya/react-primercss#readme",
-    "dependencies": {
-        "@storybook/storybook-deployer": "^2.2.0"
-    }
+    "homepage": "https://github.com/jmgaya/react-primercss#readme"
 }
