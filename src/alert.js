@@ -5,13 +5,13 @@ const Alert = ({ description, type = "" }) => (
     <div className={`flash ${type}`}>{description}</div>
 );
 
-const SuccessAlert = ({ description }) => <Alert description={description} />;
+export const SuccessAlert = ({ description }) => <Alert description={description} />;
 
-const WarningAlert = ({ description }) => (
+export const WarningAlert = ({ description }) => (
     <Alert description={description} type="flash-warn" />
 );
 
-const ErrorAlert = ({ description }) => (
+export const ErrorAlert = ({ description }) => (
     <Alert description={description} type="flash-error" />
 );
 
