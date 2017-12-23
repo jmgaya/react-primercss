@@ -5,7 +5,7 @@ import blankslate from "./blankslate";
 import alert from "./alert";
 import avatar from "./avatar";
 import navigation from "./navigation";
-import * as icons from "./icon";
+import * as icons from "./icons";
 
 export const Counter = counter;
 export const Button = button;
