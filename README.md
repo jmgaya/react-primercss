@@ -21,7 +21,7 @@ yarn add react-primer
 
 ### Icons 😎
 
-`import * as Icons from "react-primercss/icon";`
+`import {Icons} from "react-primer";`
 
 _[Octicons](https://octicons.github.com/)_
 
@@ -31,7 +31,7 @@ _[Octicons](https://octicons.github.com/)_
 
 ### Navigation 🔮
 
-`import Navigation from "react-primercss/navigation";`
+`import {Navigation} from "react-primer";`
 
 _Menu_
 
@@ -85,7 +85,7 @@ _Tabs_
 
 ### Alerts ⚠️
 
-`import Alert from "react-primercss/alert";`
+`import {Alert} from "react-primer";`
 
 _Success_
 
@@ -107,7 +107,7 @@ _Error_
 
 ### Avatars 🙋🏻
 
-`import Alert from "react-primercss/avatar";`
+`import {Avatar} from "react-primer";`
 
 _Square_
 
@@ -149,7 +149,7 @@ _Group_
 
 ### Counters ⏲
 
-`import Counter from "react-primercss/counter";`
+`import {Counter} from "react-primer";`
 
 ```js
 <Counter count="6" />;
@@ -157,7 +157,7 @@ _Group_
 
 ### Blankslates ◻️
 
-`import Blankslate from "react-primercss/blankslate";`
+`import {Blankslate} from "react-primer";`
 
 _Default_
 
@@ -173,7 +173,7 @@ _Simple_
 
 ### Buttons 🔘
 
-`import Button from "react-primercss/button";`
+`import {Button} from "react-primer";`
 
 _Default_
 
@@ -242,7 +242,7 @@ _Group_
 
 ### Button Links 🔳
 
-`import Button from "react-primercss/button-link";`
+`import {ButtonLink} from "react-primer";`
 
 _Default_
 
