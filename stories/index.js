@@ -7,7 +7,7 @@ import Blankslate from "../src/blankslate";
 import Alert from "../src/alert";
 import Avatar from "../src/avatar";
 import Navigation from "../src/navigation";
-import * as Icons from "../src/icon";
+import * as Icons from "../src/icons";
 
 import { storiesOf } from "@storybook/react";
 

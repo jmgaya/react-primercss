@@ -1,6 +1,6 @@
 import React from "react";
-import "./button.css";
-import Counter from "../counter";
+import "./styles/button.css";
+import Counter from "./counter";
 
 const Button = ({
     type,

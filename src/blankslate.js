@@ -1,5 +1,5 @@
 import React from "react";
-import "./blankslate.css";
+import "./styles/blankslate.css";
 
 const Blankslate = ({ title, description, simple = false }) => {
     const simpleClass = simple ? "blankslate-clean-background" : "";

@@ -1,5 +1,5 @@
 import React from "react";
-import "./navigation.css";
+import "./styles/navigation.css";
 
 export const NavigationMenu = ({ ariaLabel = "Navigation", children }) => (
     <nav className="menu" aria-label={ariaLabel}>

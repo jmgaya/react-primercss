@@ -1,6 +1,6 @@
 import React from "react";
-import "./button.css";
-import Counter from "../counter";
+import "./styles/button-link.css";
+import Counter from "./counter";
 
 const ButtonLink = ({
     type,

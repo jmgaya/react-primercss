@@ -1,5 +1,5 @@
 import React from "react";
-import "./avatar.css";
+import "./styles/avatar.css";
 
 export const SquareAvatar = ({
     src,
