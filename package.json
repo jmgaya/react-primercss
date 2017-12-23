@@ -1,24 +1,21 @@
 {
     "name": "react-primer",
-    "version": "0.6.0",
+    "version": "1.0.0",
     "description": "http://primercss.io components for React",
     "author": "Julio Muñoz <jmgaya.dev@gmail.com>",
     "main": "dist/index.js",
     "scripts": {
         "lint": "eslint ./src",
-        "test":
-            "nyc --reporter=lcov --reporter=text ava --verbose test/test.js",
+        "test": "nyc --reporter=lcov --reporter=text ava --verbose test/test.js",
         "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
         "report": "nyc report --reporter=html && opn coverage/index.html",
         "clean": "rimraf dist coverage .nyc_output",
-        "watch-css":
-            "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+        "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
         "watch-storybook": "start-storybook -p 9009 -s src",
         "storybook": "npm-run-all --parallel watch-css watch-storybook",
         "start": "npm run storybook",
         "deploy-storybook": "storybook-to-ghpages",
-        "build-css":
-            "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+        "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
         "build": "babel src --out-dir dist --copy-files --ignore '**/*.scss'",
         "prepublish": "npm run lint && npm run build-css && npm run build"
     },
@@ -47,7 +44,9 @@
         "repository": "https://registry.npmjs.org"
     },
     "ava": {
-        "require": ["babel-register"],
+        "require": [
+            "babel-register"
+        ],
         "babel": "inherit"
     },
     "license": "MIT",
