@@ -1,11 +1,9 @@
 <p align="center">
 <b>react-primercss</b><br/>
-React components for primercss.io
+React components for http://primercss.io
 </p>
 
-## Live demo
-
-[Storybook 🔎](https://jmgaya.github.io/react-primercss/?selectedKind=Icon&selectedStory=with%20color&full=0&down=1&left=1&panelRight=0&downPanel=storybook%2Factions%2Factions-panel)
+## [Live demo Storybook 🔎](https://jmgaya.github.io/react-primercss/)
 
 ## Installment
 
@@ -21,9 +19,15 @@ yarn add react-primer
 
 ### Icons 😎
 
-`import {Icons} from "react-primer";`
-`import * as Icons from "react-primer/icons";`
-`import {Icn} from "react-primer/icons";`
+#### Usage
+
+```js
+import { Icons } from "react-primer";
+import * as Icons from "react-primer/icons";
+import { Icn } from "react-primer/icons";
+```
+
+#### Components
 
 _[Octicons](https://octicons.github.com/)_
 
@@ -33,9 +37,15 @@ _[Octicons](https://octicons.github.com/)_
 
 ### Navigation 🔮
 
-`import {Navigation} from "react-primer";`
-`import Navigation from "react-primer/navigation";`
-`import {NavigationType} from "react-primer/navigation";`
+#### Usage
+
+```js
+import { Navigation } from "react-primer";
+import Navigation from "react-primer/navigation";
+import { NavigationType } from "react-primer/navigation";
+```
+
+#### Components
 
 _Menu_
 
@@ -89,9 +99,15 @@ _Tabs_
 
 ### Alerts ⚠️
 
-`import {Alert} from "react-primer";`
-`import Alert from "react-primer/alert";`
-`import {AlertType} from "react-primer/navigation";`
+#### Usage
+
+```js
+import { Alert } from "react-primer";
+import Alert from "react-primer/alert";
+import { AlertType } from "react-primer/navigation";
+```
+
+#### Components
 
 _Success_
 
@@ -113,9 +129,15 @@ _Error_
 
 ### Avatars 🙋🏻
 
-`import {Avatar} from "react-primer";`
-`import Avatar from "react-primer/avatar";`
-`import {AvatarType} from "react-primer/avatar";`
+#### Usage
+
+```js
+import { Avatar } from "react-primer";
+import Avatar from "react-primer/avatar";
+import { AvatarType } from "react-primer/avatar";
+```
+
+#### Components
 
 _Square_
 
@@ -157,8 +179,16 @@ _Group_
 
 ### Counters ⏲
 
-`import {Counter} from "react-primer";`
-`import Counter from "react-primer/counter";`
+#### Usage
+
+```js
+import { Counter } from "react-primer";
+import Counter from "react-primer/counter";
+```
+
+#### Components
+
+_Default_
 
 ```js
 <Counter count="6" />;
@@ -166,8 +196,14 @@ _Group_
 
 ### Blankslates ◻️
 
-`import {Blankslate} from "react-primer";`
-`import Blankslate from "react-primer/blankslate";`
+#### Usage
+
+```js
+import { Blankslate } from "react-primer";
+import Blankslate from "react-primer/blankslate";
+```
+
+#### Components
 
 _Default_
 
@@ -183,9 +219,15 @@ _Simple_
 
 ### Buttons 🔘
 
-`import {Button} from "react-primer";`
-`import Button from "react-primer/button";`
-`import {ButtonType} from "react-primer/button";`
+#### Usage
+
+```js
+import { Button } from "react-primer";
+import Button from "react-primer/button";
+import { ButtonType } from "react-primer/button";
+```
+
+#### Components
 
 _Default_
 
@@ -254,9 +296,15 @@ _Group_
 
 ### Button Links 🔳
 
-`import {ButtonLink} from "react-primer";`
-`import ButtonLink from "react-primer/button-link";`
-`import {ButtonLinkType} from "react-primer/button-link";`
+#### Usage
+
+```js
+import { ButtonLink } from "react-primer";
+import ButtonLink from "react-primer/button-link";
+import { ButtonLinkType } from "react-primer/button-link";
+```
+
+#### Components
 
 _Default_
 
