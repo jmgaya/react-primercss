@@ -15,9 +15,10 @@
         "deploy-storybook": "storybook-to-ghpages",
         "build-css":
             "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
-        "build": "babel src --out-dir ./ --copy-files --ignore '**/*.scss'",
+        "build-js":
+            "babel src --out-dir ./ --copy-files --ignore __tests__,'**/*.scss'",
         "prepublish":
-            "npm run lint && npm run test && npm run build-css && npm run build"
+            "npm run lint && npm run test && npm run build-css && npm run build-js"
     },
     "devDependencies": {
         "@storybook/addon-actions": "^3.2.18",
