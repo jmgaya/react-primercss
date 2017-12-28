@@ -1,5 +1,1 @@
-test
-coverage
-.nyc_output
-_utils
-_stories
+__tests__

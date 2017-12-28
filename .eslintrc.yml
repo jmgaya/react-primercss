@@ -11,6 +11,7 @@ plugins:
   - react
 env:
   node: true
+  jest: true
 rules:
   semi: [error, always]
   indent: [error, 4, {SwitchCase: 1}]
