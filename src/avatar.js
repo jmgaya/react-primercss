@@ -6,7 +6,8 @@ export const SquareAvatar = ({
     height,
     width,
     child = null,
-    alt = "Avatar"
+    alt = "Avatar",
+    ...rest
 }) => {
     if (!child)
         return (
@@ -16,6 +17,7 @@ export const SquareAvatar = ({
                 src={src}
                 width={width}
                 height={height}
+                {...rest}
             />
         );
 
@@ -27,6 +29,7 @@ export const SquareAvatar = ({
                 src={src}
                 width={width}
                 height={height}
+                {...rest}
             />
             <img
                 className="avatar avatar-child"
@@ -39,8 +42,8 @@ export const SquareAvatar = ({
     );
 };
 
-export const AvatarGroup = ({ children }) => (
-    <div className="AvatarStack AvatarStack--three-plus">
+export const AvatarGroup = ({ children, ...rest }) => (
+    <div className="AvatarStack AvatarStack--three-plus" {...rest}>
         <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1">
             {children}
         </div>
@@ -51,9 +54,17 @@ export const AvatarGroupItem = ({
     src,
     alt = "@avatarItem",
     height = "20",
-    width = "20"
+    width = "20",
+    ...rest
 }) => (
-    <img className="avatar" height={height} width={width} alt={alt} src={src} />
+    <img
+        className="avatar"
+        height={height}
+        width={width}
+        alt={alt}
+        src={src}
+        {...rest}
+    />
 );
 
 export default {

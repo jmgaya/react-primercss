@@ -9,7 +9,7 @@ const Button = ({
     count,
     small,
     groupItem = false,
-    onClick = () => {}
+    ...rest
 }) => {
     const smallClass = small ? "btn-sm" : "";
     const disabledClass = disabled ? "disabled" : "";
@@ -19,7 +19,7 @@ const Button = ({
             className={`btn ${type} ${smallClass} ${disabledClass} ${
                 groupItemClass
             }`}
-            onClick={onClick}
+            {...rest}
         >
             {text}
             {!!count && <Counter count={count} />}
@@ -33,15 +33,15 @@ export const DefaultButton = ({
     count,
     small,
     groupItem,
-    onClick
+    ...rest
 }) => (
     <Button
-        onClick={onClick}
         text={text}
         disabled={disabled}
         count={count}
         small={small}
         groupItem={groupItem}
+        {...rest}
     />
 );
 
@@ -51,16 +51,16 @@ export const PrimaryButton = ({
     count,
     small,
     groupItem,
-    onClick
+    ...rest
 }) => (
     <Button
-        onClick={onClick}
         text={text}
         type={"btn-primary"}
         disabled={disabled}
         count={count}
         small={small}
         groupItem={groupItem}
+        {...rest}
     />
 );
 
@@ -70,16 +70,16 @@ export const SecondaryButton = ({
     count,
     small,
     groupItem,
-    onClick
+    ...rest
 }) => (
     <Button
-        onClick={onClick}
         text={text}
         type={"btn-purple"}
         disabled={disabled}
         count={count}
         small={small}
         groupItem={groupItem}
+        {...rest}
     />
 );
 
@@ -89,16 +89,16 @@ export const TertiaryButton = ({
     count,
     small,
     groupItem,
-    onClick
+    ...rest
 }) => (
     <Button
-        onClick={onClick}
         text={text}
         type={"btn-blue"}
         disabled={disabled}
         count={count}
         small={small}
         groupItem={groupItem}
+        {...rest}
     />
 );
 
@@ -108,16 +108,16 @@ export const DangerButton = ({
     count,
     small,
     groupItem,
-    onClick
+    ...rest
 }) => (
     <Button
-        onClick={onClick}
         text={text}
         type={"btn-danger"}
         disabled={disabled}
         count={count}
         small={small}
         groupItem={groupItem}
+        {...rest}
     />
 );
 
@@ -127,16 +127,16 @@ export const OutlineButton = ({
     count,
     small,
     groupItem,
-    onClick
+    ...rest
 }) => (
     <Button
-        onClick={onClick}
         text={text}
         type={"btn-outline"}
         disabled={disabled}
         count={count}
         small={small}
         groupItem={groupItem}
+        {...rest}
     />
 );
 export const ButtonGroup = ({ children }) => (

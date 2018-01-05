@@ -9,7 +9,8 @@ const ButtonLink = ({
     count,
     small,
     groupItem = false,
-    link = "#"
+    link = "#",
+    ...rest
 }) => {
     const smallClass = small ? "btn-sm" : "";
     const disabledClass = disabled ? "disabled" : "";
@@ -21,6 +22,7 @@ const ButtonLink = ({
             }`}
             href={link}
             role="button"
+            {...rest}
         >
             {text}
             {!!count && <Counter count={count} />}
@@ -34,7 +36,8 @@ export const DefaultButton = ({
     count,
     small,
     groupItem,
-    link
+    link,
+    ...rest
 }) => (
     <ButtonLink
         link={link}
@@ -43,6 +46,7 @@ export const DefaultButton = ({
         count={count}
         small={small}
         groupItem={groupItem}
+        {...rest}
     />
 );
 
@@ -52,7 +56,8 @@ export const PrimaryButton = ({
     count,
     small,
     groupItem,
-    link
+    link,
+    ...rest
 }) => (
     <ButtonLink
         link={link}
@@ -62,6 +67,7 @@ export const PrimaryButton = ({
         count={count}
         small={small}
         groupItem={groupItem}
+        {...rest}
     />
 );
 
@@ -71,7 +77,8 @@ export const SecondaryButton = ({
     count,
     small,
     groupItem,
-    link
+    link,
+    ...rest
 }) => (
     <ButtonLink
         link={link}
@@ -81,6 +88,7 @@ export const SecondaryButton = ({
         count={count}
         small={small}
         groupItem={groupItem}
+        {...rest}
     />
 );
 
@@ -90,7 +98,8 @@ export const TertiaryButton = ({
     count,
     small,
     groupItem,
-    link
+    link,
+    ...rest
 }) => (
     <ButtonLink
         link={link}
@@ -100,6 +109,7 @@ export const TertiaryButton = ({
         count={count}
         small={small}
         groupItem={groupItem}
+        {...rest}
     />
 );
 
@@ -109,7 +119,8 @@ export const DangerButton = ({
     count,
     small,
     groupItem,
-    link
+    link,
+    ...rest
 }) => (
     <ButtonLink
         link={link}
@@ -119,6 +130,7 @@ export const DangerButton = ({
         count={count}
         small={small}
         groupItem={groupItem}
+        {...rest}
     />
 );
 
@@ -128,7 +140,8 @@ export const OutlineButton = ({
     count,
     small,
     groupItem,
-    link
+    link,
+    ...rest
 }) => (
     <ButtonLink
         link={link}
@@ -138,6 +151,7 @@ export const OutlineButton = ({
         count={count}
         small={small}
         groupItem={groupItem}
+        {...rest}
     />
 );
 export const ButtonGroup = ({ children }) => (

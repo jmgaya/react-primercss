@@ -1,18 +1,22 @@
 import React from "react";
 import "./styles/alert.css";
 
-const Alert = ({ description, type = "" }) => (
-    <div className={`flash ${type}`}>{description}</div>
+const Alert = ({ description, type = "", ...rest }) => (
+    <div className={`flash ${type}`} {...rest}>
+        {description}
+    </div>
 );
 
-export const SuccessAlert = ({ description }) => <Alert description={description} />;
-
-export const WarningAlert = ({ description }) => (
-    <Alert description={description} type="flash-warn" />
+export const SuccessAlert = ({ description, ...rest }) => (
+    <Alert description={description} {...rest} />
 );
 
-export const ErrorAlert = ({ description }) => (
-    <Alert description={description} type="flash-error" />
+export const WarningAlert = ({ description, ...rest }) => (
+    <Alert description={description} type="flash-warn" {...rest} />
+);
+
+export const ErrorAlert = ({ description, ...rest }) => (
+    <Alert description={description} type="flash-error" {...rest} />
 );
 
 export default {
