@@ -57,10 +57,7 @@ var AvatarGroup = exports.AvatarGroup = function AvatarGroup(_ref2) {
         { className: "AvatarStack AvatarStack--three-plus" },
         _react2.default.createElement(
             "div",
-            {
-                className: "AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1",
-                "aria-label": "octocat, octocat, and octocat"
-            },
+            { className: "AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" },
             children
         )
     );

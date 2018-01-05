@@ -17,7 +17,7 @@ yarn add react-primer
 
 ## Components
 
-### Icons 😎
+# `<Icon />`
 
 #### Usage
 
@@ -35,7 +35,7 @@ _[Octicons](https://octicons.github.com/)_
 <Icons.IcnLogoGithub height="64" color="#28A745" />;
 ```
 
-### Navigation 🔮
+# `<Navigation />`
 
 #### Usage
 
@@ -97,7 +97,7 @@ _Tabs_
 </Navigation.Tabs>;
 ```
 
-### Alerts ⚠️
+# `<Alert />`
 
 #### Usage
 
@@ -127,7 +127,7 @@ _Error_
 <Alert.Error description="This is an error alert!" />;
 ```
 
-### Avatars 🙋🏻
+# `<Avatar />`
 
 #### Usage
 
@@ -177,7 +177,7 @@ _Group_
 </Avatar.Group>;
 ```
 
-### Counters ⏲
+# `<Counter />`
 
 #### Usage
 
@@ -194,7 +194,7 @@ _Default_
 <Counter count="6" />;
 ```
 
-### Blankslates ◻️
+# `<Blankslate />`
 
 #### Usage
 
@@ -217,7 +217,7 @@ _Simple_
 <Blankslate title="Simple 👏" description="blankslate 🕶" simple />;
 ```
 
-### Buttons 🔘
+# `<Button />`
 
 #### Usage
 
@@ -294,7 +294,7 @@ _Group_
 </Button.Group>;
 ```
 
-### Button Links 🔳
+# `<ButtonLink />`
 
 #### Usage
 
