@@ -14,8 +14,10 @@ test("SuccessAlert renders description", () => {
 });
 
 test("WarningAlert contains expected classes", () => {
-    expect(render(<WarningAlert />).hasClass("flash")).toBe(true);
-    expect(render(<WarningAlert />).hasClass("flash-warn")).toBe(true);
+    const component = render(<WarningAlert />);
+
+    expect(component.hasClass("flash")).toBe(true);
+    expect(component.hasClass("flash-warn")).toBe(true);
 });
 
 test("WarningAlert renders description", () => {
@@ -26,8 +28,10 @@ test("WarningAlert renders description", () => {
 });
 
 test("ErrorAlert contains expected classes", () => {
-    expect(render(<ErrorAlert />).hasClass("flash")).toBe(true);
-    expect(render(<ErrorAlert />).hasClass("flash-error")).toBe(true);
+    const component = render(<ErrorAlert />);
+
+    expect(component.hasClass("flash")).toBe(true);
+    expect(component.hasClass("flash-error")).toBe(true);
 });
 
 test("ErrorAlert renders description", () => {

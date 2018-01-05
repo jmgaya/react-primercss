@@ -41,10 +41,7 @@ export const SquareAvatar = ({
 
 export const AvatarGroup = ({ children }) => (
     <div className="AvatarStack AvatarStack--three-plus">
-        <div
-            className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1"
-            aria-label="octocat, octocat, and octocat"
-        >
+        <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1">
             {children}
         </div>
     </div>

@@ -47,7 +47,7 @@
     },
     "jest": {
         "testRegex": "\\.test\\.js",
-        "setupTestFrameworkScriptFile": "<rootDir>src/__tests__/setup-tests.js",
+        "setupTestFrameworkScriptFile": "<rootDir>src/__tests__/setup.js",
         "moduleNameMapper": {
             "\\.(css|less)$": "identity-obj-proxy"
         }
