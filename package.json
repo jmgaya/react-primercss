@@ -1,24 +1,20 @@
 {
     "name": "react-primer",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "http://primercss.io components for React",
     "author": "Julio Muñoz <jmgaya.dev@gmail.com>",
     "main": "index.js",
     "scripts": {
         "lint": "eslint ./src",
         "test": "jest",
-        "watch-css":
-            "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+        "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
         "watch-storybook": "start-storybook -p 9009 -s src",
         "storybook": "npm-run-all --parallel watch-css watch-storybook",
         "start": "npm run storybook",
         "deploy-storybook": "storybook-to-ghpages",
-        "build-css":
-            "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
-        "build-js":
-            "babel src --out-dir ./ --copy-files --ignore __tests__,'**/*.scss'",
-        "prepublish":
-            "npm run lint && npm run test && npm run build-css && npm run build-js"
+        "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+        "build-js": "babel src --out-dir ./ --copy-files --ignore __tests__,'**/*.scss'",
+        "prepublish": "npm run lint && npm run test && npm run build-css && npm run build-js"
     },
     "devDependencies": {
         "@storybook/addon-actions": "^3.2.18",
