@@ -15,8 +15,6 @@ npm install react-primer
 yarn add react-primer
 ```
 
-## Components
-
 # `<Icon />`
 
 #### Usage
