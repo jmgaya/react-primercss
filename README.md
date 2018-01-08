@@ -1,6 +1,10 @@
 <p align="center">
-<b>react-primercss</b><br/>
-React components for http://primercss.io
+    <p align="center">
+    <b>react-primercss</b><br/>
+        React components for http://primercss.io
+</p>
+<p align="center">
+    <a href="https://travis-ci.org/jmgaya/react-primercss"><img src="https://travis-ci.org/jmgaya/react-primercss.svg" alt="Build Status"/></a>
 </p>
 
 ## [Live demo Storybook 🔎](https://jmgaya.github.io/react-primercss/)
